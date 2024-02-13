@@ -172,8 +172,8 @@ if (mysqli_num_rows($result) > 0) {
 
 
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-        <p>Base de dados de Galerias de Arte</p>
-		<p>Copyright 2024 galeriajoaoalves.pt</p>
+        	<p>Base de dados de Galerias de Arte</p>
+		<p>Copyright &copy; <?php echo date("Y"); ?> galeriajoaoalves.pt</p>
 	</div><!-- /footer -->
 		<!-- /right_panel -->
         <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
@@ -195,20 +195,10 @@ if (mysqli_num_rows($result) > 0) {
                 } else {
                     echo "0 results";
                 }
-
                 ?>    
-        </ul>
-	
+		</ul>
 	</div>
-</li>
-
-
-
-			</ul>
-		</div>
-	</div><!-- /right-panel -->
-
-
+</div><!-- /right-panel -->
 </div><!-- /page -->
 
 <div data-role="page" id="demo-page" data-title="Pinturas">
